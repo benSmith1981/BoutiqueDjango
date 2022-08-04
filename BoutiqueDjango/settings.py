@@ -54,11 +54,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'BoutiqueDjango.urls'
-
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'project','templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
