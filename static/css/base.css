@@ -58,14 +58,15 @@ body {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
+/* Slightly larger container on xl screens 
+Widen default bootstrap class on extra large screens*/
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar only on medium and up .... min screen width 992 px only affect medicum and larger screens*/
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -74,7 +75,7 @@ body {
         left: 0;
         z-index: 1030;
     }
-
+/* add 164px to push body down to bottom of main page header */
     .header-container {
         padding-top: 164px;
     }
